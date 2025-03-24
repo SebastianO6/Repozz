@@ -1,45 +1,34 @@
-## Deploy JSON Server to Vercel
-
-A template to deploy [JSON Server](https://github.com/typicode/json-server) to [Vercel](https://vercel.com), allow you to run fake REST API online!
-
-Demo from this repository: 
-
-1. https://json-server-in.vercel.app
-2. https://json-server-in.vercel.app/api/posts
-
-![Powered by Vercel](https://images.ctfassets.net/e5382hct74si/78Olo8EZRdUlcDUFQvnzG7/fa4cdb6dc04c40fceac194134788a0e2/1618983297-powered-by-vercel.svg)
-
-### How to use
-
-1. Click "**Use this template**" or clone this repository.
-2. Update or use the default [`db.json`](./db.json) in the repository.
-3. Sign Up or login into [Vercel](https://vercel.com).
-4. From the Vercel dashboard, click "**+ New Project**" then "**Import**" your repository.
-5. In the "**Configure Project**" screen, leave everything default and click "**Deploy**".
-6. Wait until deployment is done, and your own JSON server is ready to serve!
-
-## Default `db.json`
-
-```json
 {
-  "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
-  ],
-  "profile": { "name": "typicode" }
+  "characters": [
+    {
+      "id": 1,
+      "name": "Mr. Cute",
+      "image": "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZzN3aHN5aHh1eTdxYnA4cnd4dzl5NjBvczJncHcxbmszb3dpb3ZiaiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/gKHGnB1ml0moQdjhEJ/200.webp",
+      "votes": 0
+    },
+    {
+      "id": 2,
+      "name": "Mx. Monkey",
+      "image": "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdjVoYzc3YTVodzdremFtMjgyMXM5b25uem55YXE4aTc4MzMyYTQ4ZSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/g4ODNTnpEBrmsghYtD/200.webp",
+      "votes": 0
+    },
+    {
+      "id": 3,
+      "name": "Ms. Zebra",
+      "image": "https://media3.giphy.com/media/82LHEE3EiRSYkKIVnv/200.webp?cid=ecf05e47g4ckzlevr88i6pn9ez503k3xf7dv9w62eea4dp80&ep=v1_gifs_search&rid=200.webp&ct=g     ",
+      "votes": 0
+    },
+    {
+      "id": 4,
+      "name": "Dr. Lion",
+      "image": "https://media2.giphy.com/media/8OcsWvaPQut7IHmmqx/giphy.webp?cid=ecf05e4792mhp0gbqqksikxj8es1pgo0qmqeich2y3c9kmbs&ep=v1_gifs_search&rid=giphy.webp&ct=g",
+      "votes": 0
+    },
+    {
+      "id": 5,
+      "name": "Mme. Panda",
+      "image": "https://media4.giphy.com/media/N6funLtVsHW0g/200.webp?cid=ecf05e476pluczmbyo97qplfl4lpo1hrgvt40mf8vyintsyp&ep=v1_gifs_search&rid=200.webp&ct=g",
+      "votes": 0
+    }
+  ]
 }
-```
-
-## Enable write operations
-
-By default, only GET operation is allowed, thanks to the contribution by [@VicAv99](https://www.github.com/VicAv99) at [#6](https://github.com/kitloong/json-server-vercel/issues/6), we can now enable write operations as well.
-
-You can find the example code in [`api/server.js`](./api/server.js).
-
-## Reference
-
-1. https://github.com/typicode/json-server
-2. https://vercel.com
-3. https://shadowsmith.com/how-to-deploy-an-express-api-to-vercel
